@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boot link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/67c92bddbd.js" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <div id="cover-page">
+        <div id="cover-page-content">
+            <h1 class="mb-5"><span class="text-danger fw-bold">Rock Paper Scissor</span> Game</h1>
+            <inpu onclick="cover('none')" type='button' id="cover-button"
+                class="btn btn-danger px-5 py-3 fw-bold fs-3 rounded-pill">Let's
+                play <i class="fas fa-play"></i></input>
+        </div>
+    </div>
+    <div class="game-container d-flex justify-content-center align-items-center flex-column">
+        <!-- pre loader -->
+        <div id="pre-loader">
+            <div id="loader"></div>
+        </div>
+        <!-- heading -->
+        <h1 class="mb-4"><span class="span fw-bold">Rock Paper Scissor</span> Game</h1>
+
+        <!-- score section -->
+        <div id="score">
+            <span>score: </span>
+            <span id="cpu-point" class="point">00</span>
+            <span class="point">-</span>
+            <span id="user-point" class="point">00</span>
+        </div>
+
+        <!-- preview section -->
+        <div class="container view">
+            <div class="prev"><i id="cpu-prev" class="fas fa-chess-rook fa-10x"></i></div>
+            <div class="vs">vs</div>
+            <div class="prev"><i id="user-prev" class="fas fa-chess-rook fa-10x"></i></div>
+        </div>
+
+        <!-- input section -->
+        <div id="button-container" class="container py-5">
+            <button class="display bg-danger" value='1'><i class="logo fas fa-hand-rock fa-10x"></i></button>
+            <button class="display bg-danger" value='2'><i class="logo fas fa-hand-paper fa-10x"></i></button>
+            <button class="display bg-danger" value='3'><i class="logo fas fa-hand-scissors fa-10x"></i></button>
+        </div>
+    </div>
+
+    <!-- script link -->
+    <script src="js.js"></script>
+</body>
+
+</html>
